@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/estils.css">
+    <title>Inscripció</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header-logo-link" href="index.html">
+            <img class="header-logo-circle" src="img/isologo-taller.png" alt="">
+            <h4 class="header-el-taller">el taller</h1>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a class="header-link" href="que-es-la-ceramica.html">CERÀMICA</a></li>
+                <li><a class="header-link" href="cursos.html">CURSOS</a></li>
+                <li><a class="header-link header-link-underline" href="inscripcio-cursos.html">INSCRIPCIÓ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content main-inscripcio">
+        <form class="form-cursos">
+            <h2 class="inscripcio-title">Inscripció als cursos</h2>
+            <p class="form-obligatori">Els camps assenyalats amb * són obligatoris</p>
+            <fieldset class="detalls-inscripcio-fieldset">
+                <legend>Detalls de la inscripció</legend>
+
+                <div class="detalls-inscripción-fields">
+                    
+                    <div class="input-text">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" maxlength="64" pattern="[A-Za-z'-]+" required>
+                    </div>
+
+                    <div class="input-text">
+                        <label for="cognoms">Cognoms *</label> 
+                        <input type="text" id="cognoms" name="cognoms" maxlength="128" pattern="[A-Za-z'-]+" required> 
+                    </div>              
+
+                    <div class="input-text">
+                        <label for="correu">Correu Electrònic *</label>
+                        <input type="email" id="correu" name="correu" required>
+                    </div>              
+
+                    <div class="input-text">
+                        <label for="telefon">Telèfon *</label>
+                        <input type="tel" id="telefon" name="telefon">
+                    </div>              
+
+                    <div class="input-text">
+                        <label for="data_naixement">Data de Naixement *</label>
+                        <input type="date" id="data_naixement" name="data_naixement" required>
+                    </div>              
+
+                    <div class="input-text">
+                        <label for="curs">Curs *</label>
+                        <select id="curs" name="curs">
+                            <option value="Selecció">Selecciona el curs</option>
+                        </select>
+                    </div>              
+
+                </div>
+
+            </fieldset>
+            <fieldset class="altres-informacions-fieldset">
+                <legend>Altres informacions</legend>
+                
+                <div class="altre-informacions-fields">
+                    <fieldset class="altres-cursos-fieldset">
+                        <legend>Has realitzat altres cursos amb nosaltres *</legend>
+                        
+                        <div class="inputs-radio-group">
+                            <div class="input-radio">
+                                <input type="radio" checked="checked" name="hasCoursesWithUs">
+                                <label>Sí</label>
+                            </div>
+                            
+                            <div class="input-radio">
+                                <input type="radio" name="hasCoursesWithUs">
+                                <label>No</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="input-text">
+                        <label for="comments">Vols comentar o preguntar alguna cosa?</label>
+                        <textarea id="comments"></textarea>
+                    </div>
+                </div>
+                
+            </fieldset>
+            <fieldset class="metode-pagament-fieldset">
+                <legend>Tria un mètode de pagament</legend>
+
+                <div class="inputs-radio-group">
+                    <div class="input-radio">
+                        <input type="radio" checked="checked" name="paymentMethod">
+                        <label>Transferència</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input input type="radio" name="paymentMethod">
+                        <label>Targeta de dèbit / crèdit</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input input type="radio" name="paymentMethod">
+                        <label>En efectiu</label>
+                    </div>
+                </div>
+            </fieldset>
+            <p class="proteccio-dades">INFORMACIÓ SOBRE PROTECCIÓ DE DADES D'EL TALLER. Finalitats: recollida de dades per a la inscripció en
+                els cursos. Legitimació: Consentiment de l'interessat. Destinataris: No estan previstes cessions de
+                dades a tercers, excepte obligació legal. Drets: Pot retirar el seu consentiment en qualsevol moment,
+                així com accedir, rectificar, suprimir les seves ades i altres drets dirigint-se a <a href="#">info@eltaller.es</a>.
+                Informació Addicional: Pot ampliar aquesta informació en l'enllaç d’<a href="#">Avis Legal</a> i <a href="#">Política de privacitat</a>.
+            </p>
+
+            <div class="input-radio privacitat">
+                <input type="checkbox">
+                <label class="input-radio"> He llegit i accepto la política de privacitat *</label>
+            </div>
+
+        </form>
+        <button type="button" style="width: 170px; height: 50px; background-color:#942c0b; color: white; border-radius: 0px;">INSCRIU-ME</button>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-delimiter">
+            <nav>
+                <ul class="links">
+                    <li><a class="footer-link" href="#">Avís legal</a></li>
+                    <li><a class="footer-link" href="#">Política de privacitat</a></li>
+                    <li><a class="footer-link" href="#">Política de cookies</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copyright">2023 © Ramon Estadella Serra</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

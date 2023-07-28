@@ -1,0 +1,614 @@
+/* Estils generals*/
+
+@font-face {
+    font-family: 'Work Sans Regular 400';
+    src: url('../fonts/WorkSans/static/WorkSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans Regular 400 Italic';
+    src: url('../fonts/WorkSans/');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Work Sans Bold 700';
+    src: url('../fonts/WorkSans/static/WorkSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Work Sans Bold 700 Italic';
+    src: url('../fonts/WorkSans/static/WorkSans-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+:root {
+    --white: #FFF;
+    --black: #000;
+    --content-max-width: 800px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.index {
+    background-image: url(../img/home-hero.jpg);
+    background-size: cover;
+}
+
+.negreta {
+    font-family: 'Work Sans Bold 700' !important;
+}
+
+/* Menú de navegació index.html*/
+
+.header-front-page {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.menu {
+    font-family: 'Work Sans Regular 400';
+    display: flex;
+    gap: 20px;
+
+}
+
+.menu-link {
+    list-style-type: none;
+}
+
+.menu-link a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu-link a:hover{
+    color:#6bdec8;
+}
+/* Títol web portada index.html*/
+
+
+main {
+    margin-bottom: 250px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-title-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.main-title {
+    color: var(--white);
+    font-family: 'Work Sans Bold 700';
+    font-size: 6rem;
+}
+
+.subtitle {
+    color: var(--white);
+    font-family: 'Work Sans Bold 700';
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+}
+
+/* Peu de Pàgina index.html*/
+
+.footer-front-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mainpage-footer-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.mainpage-footer-menu li {
+    list-style-type: none;
+}
+
+.mainpage-footer-menu li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Work Sans Regular 400';
+}
+
+.mainpage-nav{
+    margin-bottom: 20px;
+}
+
+.photo-credits {
+    color: var(--white);
+    font-size: 0.7rem;
+    font-family: 'Work Sans Regular 400';
+}
+
+.photo-credits a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* Header Cursos.html */
+
+.header {
+    height: 120px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.header-logo-circle {
+    width: 25px;
+    height: 25px;
+}
+
+.header-el-taller {
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.3rem;
+    font-family: 'Work Sans Bold 700';
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-link {
+    color: #FFF;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-family: 'Work Sans Regular 400';
+    padding: 0;
+}
+
+.header-link:hover{
+    color: #6bdec8;
+}
+
+.header-link-underline {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--white);
+}
+
+/* section cursos.html */
+
+.cursos-ceramica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.cursos-ceramica h2 {
+    font-family: 'Work Sans Bold 700';
+    font-size: 2rem;
+}
+
+.cursos-ceramica h3 {
+    font-family: 'Work Sans Bold 700';
+    font-size: 3rem;
+}
+
+.caption {
+    width: 600px;
+    font-family: 'Work Sans Regular 400';
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.caption a {
+    color: #942c0b;
+    text-decoration: none;
+    border-bottom: 1px dotted #942c0b;
+}
+
+.caption a:hover {
+    border-bottom: 1px solid #942c0b;
+}
+
+.cursos-ceramica p {
+    width: 600px;
+    font-family: 'Work Sans Bold 700';
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+.main-cursos {
+    margin-bottom: 40px;
+}
+
+
+/* Taula programació de cursos cursos.html */
+
+
+.taula {
+    font-family: 'Work Sans Regular 400';
+    font-size: 0.8rem;
+}
+
+.taula table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+    /* Perquè no es centra amb 50%??????*/
+    margin: 20px auto;
+}
+
+.taula .titol-taula {
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.borde {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.taula table {
+    border-collapse: collapse;
+}
+
+.taula .color {
+    background-color: #6bdec8;
+}
+
+.taula .cursos {
+    font-family: 'Work Sans Bold 700';
+    font-size: 1rem;
+}
+
+
+.taula table td {
+    padding: 10px;
+}
+
+
+/* Footer cursos.html i que-es-la-ceramica.html i inscripcio-cursos.html */
+
+.footer {
+    height: 100px;
+    background-color: var(--black);
+    padding: 16px;
+}
+
+.footer-delimiter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: var(--content-max-width);
+    margin: auto;
+}
+
+.links {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Work Sans Regular 400';
+}
+
+.footer-link:hover{
+    color:#6bdec8;
+}
+
+.footer-copyright {
+    color: var(--white);
+    font-size: 0.7rem;
+    font-family: 'Work Sans Regular 400';
+}
+
+/* header que-es-la-ceramica.html    ===     header cursos.html  (Reciclo codi)*/
+
+/* main */
+.main-content {
+    max-width: var(--content-max-width);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+.main-que-es-la-ceramica {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* primer <article> que-es-la-ceramica.html */
+
+.que-es-la-ceramica {
+    text-align: center;
+}
+
+.que-es-la-ceramica h2 {
+    font-family: 'Work Sans Bold 700';
+    font-size: 2rem;
+}
+
+.que-es-la-ceramica p {
+    text-align: justify;
+    font-family: 'Work Sans Regular 400';
+    margin-top: 35px;
+    line-height: 23px;
+    font-size: 1rem;
+}
+
+.que-es-la-ceramica figure {
+    margin-top: 40px;
+}
+
+.video-foot {
+    max-width: var(--content-max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    margin-bottom: 10px;
+}
+
+.figcaption {
+    width: 650px;
+    font-family: 'Work Sans Regular 400';
+    font-size: 0.7rem;
+    text-align: left;
+
+
+
+
+}
+
+
+/* SECTION que-es-la-ceramica */
+
+/* article historia */
+
+.historia h3 {
+    font-family: 'Work Sans Bold 700';
+    border-bottom: 1px solid black;
+    margin-bottom: 24px;
+}
+
+.historia p {
+    text-align: justify;
+    font-family: 'Work Sans Regular 400';
+    line-height: 23px;
+    font-size: 1rem;
+}
+
+.historia-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* article Utensilis */
+
+.utensilis h3 {
+    font-family: 'Work Sans Bold 700';
+}
+
+.utensilis p {
+    text-align: justify;
+    font-family: 'Work Sans Regular 400';
+    margin-top: 20px;
+    line-height: 23px;
+    font-size: 1rem;
+}
+
+.utensilis ul {
+    margin-top: 20px;
+    font-family: 'Work Sans Regular 400';
+}
+
+.utensilis ul li {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+/* article Tècniques i materials */
+
+.tecniques-materials h3 {
+    font-family: 'Work Sans Bold 700';
+}
+
+.tecniques-materials p {
+    font-family: 'Work Sans Regular 400';
+    margin-top: 20px;
+}
+
+.tecniques-materials dl dt {
+    font-family: 'Work Sans Bold 700';
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.tecniques-materials dl dd {
+    font-family: 'Work Sans Regular 400';
+    margin-left: 80px;
+}
+
+.elaborat {
+    font-size: 0.7rem;
+}
+
+.elaborat a {
+    color: #942c0b;
+    text-decoration: none;
+    border-bottom: 1px dotted #942c0b;
+}
+
+.elaborat a:hover {
+    border-bottom: 1px solid #942c0b;
+}
+
+
+/*   pàgina inscripcio-cursos.html*/
+
+.form-cursos{
+    max-width: var(--content-max-width);
+    font-family:'Work Sans Regular 400' ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inscripcio-title{
+    font-family:'Work Sans Bold 700' ;
+    font-size: 2rem;
+}
+
+.form-obligatori{
+    width: 752px;
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+
+.detalls-inscripcio-fieldset,
+.altres-informacions-fieldset,
+.metode-pagament-fieldset {
+    width: 752px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.altres-cursos-fieldset {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.detalls-inscripción-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.altre-informacions-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-radio {
+    display: flex;
+    gap: 12px;
+}
+
+.privacitat{
+    width: var(--content-max-width);
+    margin: auto;
+}
+
+.privacitat .input-radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input:not([type='radio']), 
+select {
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+input[type='checkbox'] {
+    border-radius: 50%;
+}
+
+textarea {
+    height: 100px;
+}
+
+legend{
+    font-family:'Work Sans Bold 700';
+}
+
+.form-cursos a{
+    color: #942c0b;
+    text-decoration: none;
+    border-bottom: 1px dotted #942c0b;
+}
+
+.form-cursos a:hover{
+    border-bottom: 1px solid #942c0b;
+}
+
+.form-cursos .proteccio-dades{
+    line-height: 25px ;
+}
+
