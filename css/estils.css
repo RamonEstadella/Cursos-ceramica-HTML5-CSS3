@@ -113,7 +113,7 @@ main {
     letter-spacing: 4px;
 }
 
-/* Peu de Pàgina index.html*/
+/* Footer index.html*/
 
 .footer-front-page {
     display: flex;
@@ -309,7 +309,7 @@ main {
 }
 
 
-/* Footer cursos.html i que-es-la-ceramica.html i inscripcio-cursos.html */
+/* Footer cursos.html & que-es-la-ceramica.html & inscripcio-cursos.html */
 
 .footer {
     height: 100px;
@@ -398,19 +398,12 @@ main {
     justify-content: center;
 }
 
-.media {
-    margin-bottom: 10px;
-}
-
 .figcaption {
     width: 650px;
     font-family: 'Work Sans Regular 400';
     font-size: 0.7rem;
     text-align: left;
-
-
-
-
+    margin-left: 85px;
 }
 
 
@@ -441,6 +434,7 @@ main {
 
 .utensilis h3 {
     font-family: 'Work Sans Bold 700';
+    border-bottom: 1px solid black;
 }
 
 .utensilis p {
@@ -465,6 +459,7 @@ main {
 
 .tecniques-materials h3 {
     font-family: 'Work Sans Bold 700';
+    border-bottom: 1px solid black;
 }
 
 .tecniques-materials p {
