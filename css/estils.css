@@ -271,6 +271,10 @@ main {
     font-size: 0.8rem;
 }
 
+.tbody__th {
+    height: 35px;
+}
+
 .taula table {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -280,6 +284,7 @@ main {
 }
 
 .taula .titol-taula {
+    height: 35px;
     text-align: center;
     font-size: 1rem;
     border-bottom: 1px solid black;

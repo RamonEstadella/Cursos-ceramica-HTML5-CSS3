@@ -61,8 +61,12 @@
 
                     <div class="input-text">
                         <label for="curs">Curs *</label>
-                        <select id="curs" name="curs">
-                            <option value="Selecció">Selecciona el curs</option>
+                        <select id="curs" name="curs" size="5" required autofocus>
+                            <option value="torn">Torn</option>
+                            <option value="ceràmica">Ceràmica</option>
+                            <option value="modelatge">Modelatge</option>
+                            <option value="esmalts">Esmalts</option>
+                            <option value="joieria">Joieria ceràmica</option>
                         </select>
                     </div>              
 
@@ -78,12 +82,12 @@
                         
                         <div class="inputs-radio-group">
                             <div class="input-radio">
-                                <input type="radio" checked="checked" name="hasCoursesWithUs">
+                                <input value="si" type="radio" checked="checked" name="hasCoursesWithUs">
                                 <label>Sí</label>
                             </div>
                             
                             <div class="input-radio">
-                                <input type="radio" name="hasCoursesWithUs">
+                                <input value="no" type="radio" name="hasCoursesWithUs">
                                 <label>No</label>
                             </div>
                         </div>
@@ -123,7 +127,7 @@
             </p>
 
             <div class="input-radio privacitat">
-                <input type="checkbox">
+                <input type="checkbox" id="he-llegit" name="he-llegit">
                 <label class="input-radio"> He llegit i accepto la política de privacitat *</label>
             </div>
 
