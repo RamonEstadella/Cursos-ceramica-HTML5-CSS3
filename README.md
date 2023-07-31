@@ -1,5 +1,6 @@
 # Cursos de ceràmica
 Proyecto **Frontend** en **HTML**, **CSS** para la página web ficticia de Cursos de Ceràmica.
+NO és RESPONSIVE.
 
 - **Herramientas**: Visual Studio Code (HTML5 y CSS3), Figma, Chrome Dessarollador F12, Git, Chat GTP.
 
